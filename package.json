@@ -5,14 +5,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite dev --open", 
+    "start": "vite dev --open",
     "build": "vite build",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
     "vite": "^5.4.11"
   }
 }

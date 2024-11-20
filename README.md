@@ -19,7 +19,68 @@ npm install -D vite
 
 再在项目根目录添加一个入口 HTML 文件 index.html
 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script type="module" src="./src/index.jsx"></script>
+</html>
+
 运行 npm start 项目就启动了
+
+
+### 配置 React 插件
+
+
+npm install react react-dom
+npm install -D @vitejs/plugin-react
+
+#### 加入一个配置文件 vite.config.js
+
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()]
+});
+
+
+
+#### src/index.jsx
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <div>Yeah My Kanban</div>
+  </React.StrictMode>
+);
+
+
+#### index.html </body>之后加入
+
+ <script type="module" src="./src/index.jsx"></script>
+
+
+
+
+
+
+
 
 
 
