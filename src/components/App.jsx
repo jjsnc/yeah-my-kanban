@@ -65,7 +65,7 @@ function App() {
     );
   };
   const [isAdmin, setIsAdmin] = useState(false);
-  const handleToggleAdmin = (evt) => {
+  const handleToggleAdmin = () => {
     setIsAdmin(!isAdmin);
   };
   return (

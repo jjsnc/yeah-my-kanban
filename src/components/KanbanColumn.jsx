@@ -48,7 +48,7 @@ export function KanbanColumn({
   onRemove,
 }) {
   const [showAdd, setShowAdd] = useState(false);
-  const handleAdd = (evt) => {
+  const handleAdd = () => {
     setShowAdd(true);
   };
   const handleSubmit = (newCard) => {

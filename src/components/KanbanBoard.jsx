@@ -31,7 +31,7 @@ export default function KanbanBoard({
   const [draggedItem, setDraggedItem] = useState(null);
   const [dragSource, setDragSource] = useState(null);
   const [dragTarget, setDragTarget] = useState(null);
-  const handleDrop = (evt) => {
+  const handleDrop = () => {
     if (
       !draggedItem ||
       !dragSource ||
