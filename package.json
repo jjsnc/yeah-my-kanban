@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "vite dev --open",
@@ -12,12 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "dependencies": {
+    "@emotion/react": "^11.13.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.12.0",
     "@vitejs/plugin-react": "^4.3.3",
     "vite": "^5.4.11"
   }

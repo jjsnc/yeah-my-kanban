@@ -79,11 +79,28 @@ root.render(
 
 
 
+### 配置 Emotion
+
+npm install @emotion/react
+npm install -D @emotion/babel-plugin
 
 
 
 
+#### 修改配置文件vite.config.js ，利用 emotion 的 Babel 插件为 JSX 加入 css 属性
 
 
+
+
+export default defineConfig({
+  plugins: [
+    react({
+      jsxImportSource: '@emotion/react',
+      babel: {
+        plugins: ['@emotion/babel-plugin'],
+      },
+    }),
+  ],
+});
 
 
