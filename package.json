@@ -9,7 +9,9 @@
     "start": "vite dev --open",
     "build": "vite build",
     "lint": "eslint './src/**/*.{js,jsx}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint-staged": "echo 'Pre-commit!'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "早起喝燕麦 <zhuowangyi@163.com>",
@@ -32,7 +34,8 @@
     "globals": "^15.12.0",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.15.0",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "husky": "^8.0.0"
   },
   "repository": "https://github.com/jjsnc/yeah-my-kanban.git"
 }

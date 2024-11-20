@@ -115,3 +115,16 @@ npm install -D @types/react @types/react-dom
 
 npm init @eslint/config -y
 
+
+
+
+
+###  Git Hook
+
+npx husky-init && npm install
+
+
+#### 在 package.json 中额外加入一个 lint-staged 命令
+
+"lint-staged": "echo 'Pre-commit!'",
+
