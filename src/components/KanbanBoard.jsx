@@ -40,6 +40,10 @@ export default function KanbanBoard({
     ) {
       return;
     }
+
+
+
+    
     dragSource && onRemove(dragSource, draggedItem);
     dragTarget && onAdd(dragTarget, draggedItem);
   };

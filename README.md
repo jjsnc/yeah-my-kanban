@@ -128,3 +128,20 @@ npx husky-init && npm install
 
 "lint-staged": "echo 'Pre-commit!'",
 
+
+#### .husky/pre-commit 中把默认的 npm test 改为 npm run lint-staged
+
+
+
+#### 第二步，安装 lint-staged ，这个工具会保证只检查需要提交的文件，而不是所有文件
+
+npm install -D lint-staged
+
+
+#### 在 package.json 中调用 lint-staged
+
+ "lint-staged": "lint-staged",
+
+"lint-staged": {
+    "*.{js,jsx}": "eslint"
+  },
