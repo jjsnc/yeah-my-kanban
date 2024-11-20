@@ -10,4 +10,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/', // 例如配置了这个
 });
