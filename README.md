@@ -104,3 +104,7 @@ export default defineConfig({
 });
 
 
+
+### 代码自动补全
+
+npm install -D @types/react @types/react-dom
