@@ -108,3 +108,10 @@ export default defineConfig({
 ### 代码自动补全
 
 npm install -D @types/react @types/react-dom
+
+
+
+### 代码静态检查
+
+npm init @eslint/config -y
+
