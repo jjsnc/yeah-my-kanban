@@ -145,3 +145,9 @@ npm install -D lint-staged
 "lint-staged": {
     "*.{js,jsx}": "eslint"
   },
+
+
+### Vite React 项目 安装 typescript
+
+
+npm install -D typescript @types/node @types/react @types/react-dom @types/jest
